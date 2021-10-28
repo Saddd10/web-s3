@@ -17,5 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('dashboard');
 // });
 
-Route::get('/', 'DashboardController@index')->name('dashboard');
+Route::get('/', 'DashboardController@index');
+Route::get('/daftar_mhs', 'AdminController@index');
 Route::get('/mahasiswa', 'MahasiswaController@index');
+Route::get('/login', 'LoginController@index');
