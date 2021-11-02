@@ -17,7 +17,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('dashboard');
 // });
 
-Route::get('/', 'DashboardController@index');
-Route::get('/daftar_mhs', 'AdminController@index');
+Route::get('/', 'AdminController@index');
+Route::get('/daftar_mhs', 'AdminController@read_mhs');
+Route::get('/daftar_mhs/{id}/edit', 'AdminController@edit');
+Route::get('/pendaftar', 'AdminController@read_pendaftar');
+
 Route::get('/mahasiswa', 'MahasiswaController@index');
-Route::get('/login', 'LoginController@index');
+Route::get('/skd1', 'MahasiswaController@daftar_skd1');
+Route::get('/skd2', 'MahasiswaController@daftar_skd2');
+
+Route::get('/nilai', 'DosenController@index');

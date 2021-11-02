@@ -8,7 +8,16 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        $data_mahasiswa = \App\Mahasiswa::all();
-        return view('mhs_dashboard', ['data_mahasiswa' => $data_mahasiswa]);
+        return view('mhs_dashboard');
+    }
+
+    public function daftar_skd1()
+    {
+        return view('seminar1');
+    }
+
+    public function daftar_skd2()
+    {
+        return view('seminar2');
     }
 }

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <title>Admin - Monitoring</title>
+    <title>Pascasarjana IF - Monitoring S3</title>
     <!-- Custom fonts for this template -->
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link
@@ -38,7 +38,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">ADMIN</div>
+                <div class="sidebar-brand-text mx-3">MAHASISWA</div>
             </a>
 
             <!-- Divider -->
@@ -46,19 +46,19 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/') }}">
+                <a class="nav-link" href="{{ url('/mahasiswa') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Pengumuman</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/daftar_mhs') }}">
+                <a class="nav-link" href="{{ url('/skd1') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Daftar Mahasiswa S3</span></a>
+                    <span>Seminar Kemajuan Disertasi I (DSR-2)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/pendaftar') }}">
+                <a class="nav-link" href="{{ url('/skd2') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Mahasiswa Ikut Ujian</span></a>
+                    <span>Seminar Kemajuan Disertasi II (DSR-3)</span></a>
             </li>
         </ul>
         <!-- End of Sidebar -->
@@ -120,6 +120,28 @@
                             </div>
                         </li>
                         <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
                     </ul>
 
                 </nav>
